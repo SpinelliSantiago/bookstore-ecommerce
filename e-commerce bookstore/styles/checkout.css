@@ -1,0 +1,106 @@
+:root{
+    --background: #f4eee1;
+    --primary-color: #f4dcc1;
+    --primary-color-dark: #ffc077;
+    --primary-color-darker: #f58e18;
+    --text-light: #f58e18;
+    --text-dark: #002a5a;
+    --white: #ffffff;
+    --font-a: "Libre Baskerville", serif;
+    --font-b: "Cormorant Garamond", serif;
+    --font-c: "Source Sans Pro", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-a);
+    background-image: url(../assets/checkoutbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00000080;
+    z-index: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+    margin: auto;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid var(--primary-color-darker);
+    background: var(--primary-color);
+}
+
+.text h1{
+    font-size: 35px;
+    font-family: var(--font-a);
+    color: var(--text-dark);
+    margin-bottom: 50px;
+}
+
+.text p{
+    font-family: var(--font-c);
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btns{
+    font-family: var(--font-c);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: var(--primary-color-darker);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    border: 2px solid var(--text-dark);
+    background-color: var(--primary-color-dark);
+    color: var(--text-dark);
+}
+
+
+@media (max-width: 768px){
+
+    .btns{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn{
+        width: 220px;
+        text-align: center;
+    }
+
+}
