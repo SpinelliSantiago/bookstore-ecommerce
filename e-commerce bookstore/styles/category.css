@@ -250,7 +250,6 @@ span{
 }
 
 
-/* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
 .search_bar input{
     width: 300px;
@@ -278,7 +277,6 @@ main{
 }
 }
 
-/* Celular */
 @media (max-width: 768px) {
 nav{
     display: flex;

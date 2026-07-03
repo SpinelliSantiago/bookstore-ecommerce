@@ -265,7 +265,6 @@ main{
 }
 
 
-/* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
 .search_bar input{
     width: 300px;
@@ -274,6 +273,7 @@ main{
     border: 1px solid var(--primary-color-dark);
     background: var(--background);
 }
+
 main{
     padding-top: 80px;
 }
@@ -282,10 +282,8 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
 }
-
 }
 
-/* Celular */
 @media (max-width: 768px) {
 nav{
     display: flex;

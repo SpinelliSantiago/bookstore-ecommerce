@@ -276,9 +276,6 @@ main{
     );
 }
 
-
-
-/* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
 .book_description h3{
     margin-left: 20px;
@@ -291,7 +288,6 @@ main{
 }
 }
 
-/* Celular */
 @media (max-width: 768px) {
 nav{
     display: flex;
